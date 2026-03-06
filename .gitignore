@@ -1,0 +1,4 @@
+*.csv
+*.mp4
+pipeline_log.txt
+_procesados.txt

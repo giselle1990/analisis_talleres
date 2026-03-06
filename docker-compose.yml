@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: talleres_db
+    environment:
+      POSTGRES_USER: data
+      POSTGRES_PASSWORD: data
+      POSTGRES_DB: talleres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
